@@ -1,25 +1,33 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Create a table</title>
+  <style>
+    body {
+      margin: 30px;
+      font-family: sans-serif;
+    }
+    table {
+      margin-bottom: 20px;
+      border-collapse: collapse;
+    }
+    td {
+      padding: 8px 12px;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
 
-<html>
+  <table id="myTable" border="1"></table>
 
-	<head>
-		<meta charset=utf-8 /> 
-		<title>Create a table</title> 
-		<style type="text/css"> 
-			body {margin: 30px;} 	
-		</style>
-		<link rel="stylesheet" href="styles.css">
-	</head>
+  <form>
+    <input type="button" onclick="createTable()" value="Create the table" />
+  </form>
 
-	<body>
-		<table id="myTable" border="1"> 
-		</table>
-		<form> 
-			<input type="button" onclick="createTable()" value="Create the table"> 
-		</form>
-		<script type="text/javascript" src="./script.js">
-	</script>
-
-	</body>
-
+ 
+  <script src="script.js"></script>
+</body>
 </html>
+
